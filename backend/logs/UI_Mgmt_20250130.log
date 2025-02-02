@@ -1,0 +1,206 @@
+2025-01-30 09:40:02 [INF] Application is shutting down...
+2025-01-30 21:59:45 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 21:59:45 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 21:59:45 [INF] Now listening on: https://localhost:7007
+2025-01-30 21:59:45 [INF] Now listening on: http://localhost:5000
+2025-01-30 21:59:45 [INF] Now listening on: https://localhost:5001
+2025-01-30 21:59:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 21:59:45 [INF] Hosting environment: Development
+2025-01-30 21:59:45 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 21:59:49 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 21:59:49 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 21:59:49 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 21:59:49 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 21:59:49 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 21:59:49 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 232.2865ms
+2025-01-30 21:59:49 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 21:59:49 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 354.9782ms
+2025-01-30 21:59:57 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 21:59:57 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 21:59:57 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 21:59:58 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 21:59:58 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 21:59:58 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 22.8273ms
+2025-01-30 21:59:58 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 21:59:58 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 84.6119ms
+2025-01-30 22:00:00 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qWpJc4ehIz0JmATnrkQ1wiws98cJdAEszib9P_ZaZQrIBF5WGSmMOnAvkysP_5qADXQq2aY0e5eoGtROFHHrg9d_7X8VOnBy1YauYuGr5xyPysavOGZFdblbaHAxEBm7SjtQuIz_-QZwLrkv7Qafl_Th4PQpAQNKHPWK0on6xJM6dO-3AEFsd5OencmQ0MNeFjv1D1tQ8_VwuC6aCGe1wQ5dAkyghbSmU70Eyz52jdX3IUSCX7C0IUQh2IXsnv07MurK5xtl7XceJFqm61RuUZZ_SlnKFhZPie55sg_dPDpK6222598HlS5afLS1qgo7Zqo2K24hp1IxeA6vNaGwZL&code=4%2F0ASVgi3IfLP17NxzTqfYwSoP4E8dWKCHJHO-wl1sHeVdBv1HyuFGfQYMTxg5FZQyQxeVruw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - null null
+2025-01-30 22:00:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:00:00 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qWpJc4ehIz0JmATnrkQ1wiws98cJdAEszib9P_ZaZQrIBF5WGSmMOnAvkysP_5qADXQq2aY0e5eoGtROFHHrg9d_7X8VOnBy1YauYuGr5xyPysavOGZFdblbaHAxEBm7SjtQuIz_-QZwLrkv7Qafl_Th4PQpAQNKHPWK0on6xJM6dO-3AEFsd5OencmQ0MNeFjv1D1tQ8_VwuC6aCGe1wQ5dAkyghbSmU70Eyz52jdX3IUSCX7C0IUQh2IXsnv07MurK5xtl7XceJFqm61RuUZZ_SlnKFhZPie55sg_dPDpK6222598HlS5afLS1qgo7Zqo2K24hp1IxeA6vNaGwZL&code=4%2F0ASVgi3IfLP17NxzTqfYwSoP4E8dWKCHJHO-wl1sHeVdBv1HyuFGfQYMTxg5FZQyQxeVruw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 0 null 292.5631ms
+2025-01-30 22:00:00 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:00:00 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:00:00 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 6.9877ms
+2025-01-30 22:00:48 [INF] Application is shutting down...
+2025-01-30 22:00:53 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:00:53 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:00:53 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:00:53 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:00:53 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:00:53 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:00:53 [INF] Hosting environment: Development
+2025-01-30 22:00:53 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:00:58 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:00:58 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:00:58 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:00:59 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:00:59 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:00:59 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 233.7982ms
+2025-01-30 22:00:59 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:00:59 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 389.352ms
+2025-01-30 22:01:01 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_pSOjdZ7S4ifq-q6Lthrdu9967UCAHYgrzLeWB0WI68l44rPjLtf9U_3g8HBaIBxCSObGNfwCP7yv995on-zczeRKkGUfeQ08WTSpwxEsntWPlVoqXm9dbMZKgzfvyszDKEVasay4L1DJmIhjh3NUuSL_uWSO9hkvIcPcb7By3UtQoOlt-eofviPKyWUvPQqzCYZ7ZLvsV5BYgxwuKc2mx0NJH9r6l5DMG0WvwYdmpXNDQ1cCyEGC2JzO3R3pc4rv-QysSqgbYQNQrLu_1JKYkH_X7mMiiJ7ZCcTrE--WVW-Gl0g5zZ7xrIw9atJaEwr2uIE2dxiXdAxSIyTif73URX&code=4%2F0ASVgi3KgiyLoz44hPgrBdWxYlSmOyvcIkWzDEngITP4Q5BeEZHK_IGyIM3Qt5RmObP7wSg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - null null
+2025-01-30 22:01:01 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:01:01 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_pSOjdZ7S4ifq-q6Lthrdu9967UCAHYgrzLeWB0WI68l44rPjLtf9U_3g8HBaIBxCSObGNfwCP7yv995on-zczeRKkGUfeQ08WTSpwxEsntWPlVoqXm9dbMZKgzfvyszDKEVasay4L1DJmIhjh3NUuSL_uWSO9hkvIcPcb7By3UtQoOlt-eofviPKyWUvPQqzCYZ7ZLvsV5BYgxwuKc2mx0NJH9r6l5DMG0WvwYdmpXNDQ1cCyEGC2JzO3R3pc4rv-QysSqgbYQNQrLu_1JKYkH_X7mMiiJ7ZCcTrE--WVW-Gl0g5zZ7xrIw9atJaEwr2uIE2dxiXdAxSIyTif73URX&code=4%2F0ASVgi3KgiyLoz44hPgrBdWxYlSmOyvcIkWzDEngITP4Q5BeEZHK_IGyIM3Qt5RmObP7wSg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - 302 0 null 260.1266ms
+2025-01-30 22:01:01 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:01:01 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:01:01 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 8.3106ms
+2025-01-30 22:03:18 [INF] Application is shutting down...
+2025-01-30 22:03:25 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:03:25 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:03:25 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:03:25 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:03:25 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:03:25 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:03:25 [INF] Hosting environment: Development
+2025-01-30 22:03:25 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:03:33 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:03:33 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:03:33 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:03:34 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:03:34 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:03:34 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 302.5751ms
+2025-01-30 22:03:34 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:03:34 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 437.0774ms
+2025-01-30 22:03:37 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qYBViKBstVJFIckf2G15joVrkBrwwcvEIETH7pbi8L_HiGFcOOybLi8hZVnesCkw99WEJqUzJpIYI8rVI7UxH9SSm6dDF717lmkvS09-V8-UklSkGQNX5QDgzj_0Ch7_yKd1Up13Stq3NZ_AYxNvzHqNKTgf75TX1WqgyNwAyG5KNtusSUhT82qKI6e_indyfxJC7xPgAV9TqYJt_vlJEQK2NkOp51XNcLv16Y0RHTH_hyK2-A6BekZNul5PmtfmbUnQ0MD0aRayAlP52L8sdTR0hXaM8ALGCG3kQrPjQoXBP5mHRxO748gqYzuD_Zn50ZfWr5r2w1lY4Uen0AzUNi&code=4%2F0ASVgi3IXleVaMSUYz6xh9FjWS77Q3TMKd3y4i2x05lK85ITEt_BXPdNnnu7LIt60VVqoNw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - null null
+2025-01-30 22:03:37 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:03:37 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qYBViKBstVJFIckf2G15joVrkBrwwcvEIETH7pbi8L_HiGFcOOybLi8hZVnesCkw99WEJqUzJpIYI8rVI7UxH9SSm6dDF717lmkvS09-V8-UklSkGQNX5QDgzj_0Ch7_yKd1Up13Stq3NZ_AYxNvzHqNKTgf75TX1WqgyNwAyG5KNtusSUhT82qKI6e_indyfxJC7xPgAV9TqYJt_vlJEQK2NkOp51XNcLv16Y0RHTH_hyK2-A6BekZNul5PmtfmbUnQ0MD0aRayAlP52L8sdTR0hXaM8ALGCG3kQrPjQoXBP5mHRxO748gqYzuD_Zn50ZfWr5r2w1lY4Uen0AzUNi&code=4%2F0ASVgi3IXleVaMSUYz6xh9FjWS77Q3TMKd3y4i2x05lK85ITEt_BXPdNnnu7LIt60VVqoNw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 0 null 268.251ms
+2025-01-30 22:03:37 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:03:37 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:03:37 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 9.0786ms
+2025-01-30 22:05:59 [INF] Application is shutting down...
+2025-01-30 22:06:04 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:06:04 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:06:04 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:06:04 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:06:04 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:06:04 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:06:04 [INF] Hosting environment: Development
+2025-01-30 22:06:04 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:06:10 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:06:10 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:06:10 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:06:10 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:06:10 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:06:10 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 267.3102ms
+2025-01-30 22:06:10 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:06:10 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 421.9349ms
+2025-01-30 22:06:13 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_ooSG8sJGW0bLWM4bZVsvPE-Dwb4TxrE9TdQT5tw8XAckrHkRKCCtNFTQ7CGztDIef0AUbLnaNCTB7KHtNHvW8FKk2WhgwOJ99jZOeO7HUnzLP_0ZRE87bQ69gicnEH7B1LloP9IUYX-PR5MZC_bKVA1xghDkq5TafawUf7Rl2BF-x8OTyCxRl25yH46XHUz3P__nIGHIs0hg97RvRD01ztxRfudFYXWzGLo9MkpL_od2JmNx2eA51Hn5RrbqryQViXdnXyT9AFsQlNcQoFj1zzGT39m5vea4u3fqzd0g-sjIU6tgmZtDWYlaDP630e_OIvaaDrqSEjEyvDv0odpwEf&code=4%2F0ASVgi3JywHEAUp285AnVOHGcZjperpB8jAvrupnqEWzV8FSHhsyVJVXFmuOlcjOfYOppCg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=none - null null
+2025-01-30 22:06:13 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:06:13 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_ooSG8sJGW0bLWM4bZVsvPE-Dwb4TxrE9TdQT5tw8XAckrHkRKCCtNFTQ7CGztDIef0AUbLnaNCTB7KHtNHvW8FKk2WhgwOJ99jZOeO7HUnzLP_0ZRE87bQ69gicnEH7B1LloP9IUYX-PR5MZC_bKVA1xghDkq5TafawUf7Rl2BF-x8OTyCxRl25yH46XHUz3P__nIGHIs0hg97RvRD01ztxRfudFYXWzGLo9MkpL_od2JmNx2eA51Hn5RrbqryQViXdnXyT9AFsQlNcQoFj1zzGT39m5vea4u3fqzd0g-sjIU6tgmZtDWYlaDP630e_OIvaaDrqSEjEyvDv0odpwEf&code=4%2F0ASVgi3JywHEAUp285AnVOHGcZjperpB8jAvrupnqEWzV8FSHhsyVJVXFmuOlcjOfYOppCg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=none - 302 0 null 259.2317ms
+2025-01-30 22:06:13 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:06:13 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:06:13 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 19.3201ms
+2025-01-30 22:07:01 [INF] Application is shutting down...
+2025-01-30 22:07:05 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:07:05 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:07:05 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:07:05 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:07:05 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:07:05 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:07:05 [INF] Hosting environment: Development
+2025-01-30 22:07:05 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:07:12 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:07:12 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:07:12 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:07:12 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:07:12 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:07:12 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 281.8714ms
+2025-01-30 22:07:12 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:07:12 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 474.1639ms
+2025-01-30 22:07:15 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_ruLrEM8hNA2HslrEL7PxchjSSng2bu2EGScZ3L8WNRgvcMuvjtlhGlZVvH7xFCGs9aXIetEA1csAcKKdfGCiLtikJQ4bWeTrQh2MZDsL_6dbBal8WIAFrgNjZAM0qJ_LJmjiiUIWhEW4x_7xaqVi_JS2TzZVPqvxJHhpJeR1HssSu_RDlkFv4gRYSy0Wntb3pl5bvWCQyqYZ32k5c-TXuGsOOloqyZ8LlQ23zoB70JgqSDKiKRIdpB3eqSU476WEwBxDNzeoeGSX1ThdvS0nDHyRQ9xnP405vK0A0vBhBuGSuhZcua8e7pjMbnd6cA0NcF8_0PSDHMRfPnbTR20NIH&code=4%2F0ASVgi3I3OP2pTgQSth5Ix_unRL9mMqTxTEpQQRBsNbIn9M8WAk8lD5kqixycn--v_bTIaw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=none - null null
+2025-01-30 22:07:15 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:07:15 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_ruLrEM8hNA2HslrEL7PxchjSSng2bu2EGScZ3L8WNRgvcMuvjtlhGlZVvH7xFCGs9aXIetEA1csAcKKdfGCiLtikJQ4bWeTrQh2MZDsL_6dbBal8WIAFrgNjZAM0qJ_LJmjiiUIWhEW4x_7xaqVi_JS2TzZVPqvxJHhpJeR1HssSu_RDlkFv4gRYSy0Wntb3pl5bvWCQyqYZ32k5c-TXuGsOOloqyZ8LlQ23zoB70JgqSDKiKRIdpB3eqSU476WEwBxDNzeoeGSX1ThdvS0nDHyRQ9xnP405vK0A0vBhBuGSuhZcua8e7pjMbnd6cA0NcF8_0PSDHMRfPnbTR20NIH&code=4%2F0ASVgi3I3OP2pTgQSth5Ix_unRL9mMqTxTEpQQRBsNbIn9M8WAk8lD5kqixycn--v_bTIaw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=none - 302 0 null 258.6563ms
+2025-01-30 22:07:15 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:07:15 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:07:15 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 13.3076ms
+2025-01-30 22:16:18 [INF] Application is shutting down...
+2025-01-30 22:16:23 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:16:24 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:16:24 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:16:24 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:16:24 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:16:24 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:16:24 [INF] Hosting environment: Development
+2025-01-30 22:16:24 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:16:28 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:16:28 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:16:28 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:16:29 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:16:29 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:16:29 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 285.609ms
+2025-01-30 22:16:29 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:16:29 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 435.2407ms
+2025-01-30 22:16:32 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qp6aPB1XfPAp6ghFyJS4In2iiFFEE_65Jl577UR9ax8wpP0g9OILUoOvPsNv3XLVjmZbODBhwBH0RuZ9dayeXfEpKllaR47-47sSoNdvLb9EBhEZx4uB-2bVhXpieAvYYMIccf9vMOTcTQTlzhmn492R5t-yV-rhgDGKx6GaIvXhwnw259FwJSM2HLAYjDwlEw8m9s1CSnIAhD1VW6woxuKz1Oa_HFpzfNIY3Vc2s36rS-MJGDVAnC4tDCkIZOH9ouEfVAgpwudrFj-oF4SsqCsBmzASLJitp1vKUpGNd2bwABJRW7B3I_RoOXf2TJYU-uZY9I9obADBGgzYQiJdas&code=4%2F0ASVgi3LnHk2aDy3nDwrzpTvI5SupKT5k8rf9rLUIrAr3ScWazvTM6YZ50MSnMIfRNeFCSw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - null null
+2025-01-30 22:16:32 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:16:32 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_qp6aPB1XfPAp6ghFyJS4In2iiFFEE_65Jl577UR9ax8wpP0g9OILUoOvPsNv3XLVjmZbODBhwBH0RuZ9dayeXfEpKllaR47-47sSoNdvLb9EBhEZx4uB-2bVhXpieAvYYMIccf9vMOTcTQTlzhmn492R5t-yV-rhgDGKx6GaIvXhwnw259FwJSM2HLAYjDwlEw8m9s1CSnIAhD1VW6woxuKz1Oa_HFpzfNIY3Vc2s36rS-MJGDVAnC4tDCkIZOH9ouEfVAgpwudrFj-oF4SsqCsBmzASLJitp1vKUpGNd2bwABJRW7B3I_RoOXf2TJYU-uZY9I9obADBGgzYQiJdas&code=4%2F0ASVgi3LnHk2aDy3nDwrzpTvI5SupKT5k8rf9rLUIrAr3ScWazvTM6YZ50MSnMIfRNeFCSw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 0 null 270.8561ms
+2025-01-30 22:16:32 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:16:32 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:16:32 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 8.5849ms
+2025-01-30 22:19:50 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:19:50 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:19:50 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:19:50 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:19:50 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:19:50 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 32.9437ms
+2025-01-30 22:19:50 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:19:50 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 77.7967ms
+2025-01-30 22:20:02 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_q7DsgXl2oHqC7ZtNV8jrUg-G5e6hLTmmjaD7pQ9dokwcNkao7WXUhcXah36Z0QA1s7Al1uhWPjtWNTEpsqSKv355VEfwLgKPFK-KrPJ5DF-CI9eSFJPxa7sMUD4uUn3SOBfJfSB1PtQ437NS3FEkB4vyNB0V0uNqLaSd6x4ZqFrD0ArqP6ErNM_9ncb4KJcxrlaJBky_DJsF27YXf8n-c8rGPvRZDXefHhyQhoSKX0FaueDIQJXbH48et493jqnBEUohd02oLgR0-Le1X1Y6f1OaE6UCPM0QNbB7rpUAivHM519Otx-stYEbwxq4ae4RoBUjgqK95sgVbHL88ueIc7&code=4%2F0ASVgi3JyTXqsJ8yObbO_I2H08Co_rw-ctbOtn2p-NKnGdNfJ6S9b5KOnSCqM4j_jMeS7tA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - null null
+2025-01-30 22:20:02 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:20:02 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_q7DsgXl2oHqC7ZtNV8jrUg-G5e6hLTmmjaD7pQ9dokwcNkao7WXUhcXah36Z0QA1s7Al1uhWPjtWNTEpsqSKv355VEfwLgKPFK-KrPJ5DF-CI9eSFJPxa7sMUD4uUn3SOBfJfSB1PtQ437NS3FEkB4vyNB0V0uNqLaSd6x4ZqFrD0ArqP6ErNM_9ncb4KJcxrlaJBky_DJsF27YXf8n-c8rGPvRZDXefHhyQhoSKX0FaueDIQJXbH48et493jqnBEUohd02oLgR0-Le1X1Y6f1OaE6UCPM0QNbB7rpUAivHM519Otx-stYEbwxq4ae4RoBUjgqK95sgVbHL88ueIc7&code=4%2F0ASVgi3JyTXqsJ8yObbO_I2H08Co_rw-ctbOtn2p-NKnGdNfJ6S9b5KOnSCqM4j_jMeS7tA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=1&prompt=none - 302 0 null 172.8739ms
+2025-01-30 22:20:02 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:20:02 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:20:02 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 20.1174ms
+2025-01-30 22:21:00 [INF] Application is shutting down...
+2025-01-30 22:21:05 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:21:05 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:21:05 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:21:05 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:21:05 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:21:05 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:21:05 [INF] Hosting environment: Development
+2025-01-30 22:21:05 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:21:19 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:21:19 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:21:19 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:21:19 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:21:19 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:21:19 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 335.8287ms
+2025-01-30 22:21:19 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:21:19 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 509.4258ms
+2025-01-30 22:21:31 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_pFSubqAKsAmZVxG6wzofsrtQng9qVdzfuI6t-ggL0X3Ff1y0Hj9lS2HH2lqerE9RPkYZs-2PhrNwSA59ZauW0MgGeBZ_2KkZU6FmKUr_bNUGcFt8dJ4GpNaeqELBY3rgl1bEG8bg7QoeApjWsy2ry-jLEzFwrNLOmlcKiWx-bAS7RJ3Twx3LdhT6vHGRvgHKdGTpR33hkQJ2dWBcKhFq2K_LAzDoxMTeB3Mx6zKIY01xzpWUtmjFmNrRZ22SEc3HpbChlK_gY3aoWitoAcR23G1FMbN0Xefw6iyjZXBlo_Ekvf4I0TK1e037iBwRwNM95U7cU7xyu_FcNbFdbF_q6p&code=4%2F0ASVgi3IXlf0SL2Zr9-r_C65FXZrKFF3echdpt4UZTyS2GKQZUP6rHB3k11ND-JlFeOQuSQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - null null
+2025-01-30 22:21:31 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:21:31 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_pFSubqAKsAmZVxG6wzofsrtQng9qVdzfuI6t-ggL0X3Ff1y0Hj9lS2HH2lqerE9RPkYZs-2PhrNwSA59ZauW0MgGeBZ_2KkZU6FmKUr_bNUGcFt8dJ4GpNaeqELBY3rgl1bEG8bg7QoeApjWsy2ry-jLEzFwrNLOmlcKiWx-bAS7RJ3Twx3LdhT6vHGRvgHKdGTpR33hkQJ2dWBcKhFq2K_LAzDoxMTeB3Mx6zKIY01xzpWUtmjFmNrRZ22SEc3HpbChlK_gY3aoWitoAcR23G1FMbN0Xefw6iyjZXBlo_Ekvf4I0TK1e037iBwRwNM95U7cU7xyu_FcNbFdbF_q6p&code=4%2F0ASVgi3IXlf0SL2Zr9-r_C65FXZrKFF3echdpt4UZTyS2GKQZUP6rHB3k11ND-JlFeOQuSQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - 302 0 null 285.1407ms
+2025-01-30 22:21:31 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:21:31 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:21:31 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 9.1086ms
+2025-01-30 22:31:06 [INF] Application is shutting down...
+2025-01-30 22:31:40 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-30 22:31:40 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-01-30 22:31:40 [INF] Now listening on: https://localhost:7007
+2025-01-30 22:31:40 [INF] Now listening on: http://localhost:5000
+2025-01-30 22:31:40 [INF] Now listening on: https://localhost:5001
+2025-01-30 22:31:40 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-30 22:31:40 [INF] Hosting environment: Development
+2025-01-30 22:31:40 [INF] Content root path: C:\Users\user\ProductWebsite
+2025-01-30 22:31:48 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-login - null null
+2025-01-30 22:31:48 [INF] Executing endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:31:48 [INF] Route matched with {action = "GoogleLogin", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleLogin() on controller UserManagementAPI.Controllers.UsersController (ProductWebsite).
+2025-01-30 22:31:48 [INF] Executing ChallengeResult with authentication schemes (["Google"]).
+2025-01-30 22:31:48 [INF] AuthenticationScheme: Google was challenged.
+2025-01-30 22:31:48 [INF] Executed action UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite) in 370.968ms
+2025-01-30 22:31:48 [INF] Executed endpoint 'UserManagementAPI.Controllers.UsersController.GoogleLogin (ProductWebsite)'
+2025-01-30 22:31:48 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-login - 302 0 null 540.0765ms
+2025-01-30 22:31:51 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_r4qlCjWxSq2kC3LySCj7NaruzNS_2HgQiZeMlB-KhT53mSpdy9rEs6DPfHu0dNN0mbwzJJrYNxtrK-lh-W8rH_Y5yXWw_5Rw_OGYJZHuPuRhn87xF07DyaMtG0IwUNzV56MpAj7UCcd2N6Seg2yovQW58IYKnht9YXPu-ZwS8UMNL7c_vsDXC1-aWGLOb6TYmfkWyGmzDBQPHGNn0G2L70NCLOJhJ2VQTXl13-_Y6yuEPwmWHsvjTn1qzjkgKOi_3Owv017BepZlWnDuXvUMyF3VxYCoNudlFLpOhcM4IfhC5Bnvq_rxtaL4j-o_bvEnJEUR7yss55whP8ToJmv12c&code=4%2F0ASVgi3J1-ossCZ8sKB3Q1i_qBRmUyjmn7s374UNH-F6YvDCWs0fIB7swzoa9mlgYaOZEeg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - null null
+2025-01-30 22:31:54 [INF] AuthenticationScheme: Cookies signed in.
+2025-01-30 22:31:54 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback?state=CfDJ8KiRbv1EUNdKojt2PlA3I_r4qlCjWxSq2kC3LySCj7NaruzNS_2HgQiZeMlB-KhT53mSpdy9rEs6DPfHu0dNN0mbwzJJrYNxtrK-lh-W8rH_Y5yXWw_5Rw_OGYJZHuPuRhn87xF07DyaMtG0IwUNzV56MpAj7UCcd2N6Seg2yovQW58IYKnht9YXPu-ZwS8UMNL7c_vsDXC1-aWGLOb6TYmfkWyGmzDBQPHGNn0G2L70NCLOJhJ2VQTXl13-_Y6yuEPwmWHsvjTn1qzjkgKOi_3Owv017BepZlWnDuXvUMyF3VxYCoNudlFLpOhcM4IfhC5Bnvq_rxtaL4j-o_bvEnJEUR7yss55whP8ToJmv12c&code=4%2F0ASVgi3J1-ossCZ8sKB3Q1i_qBRmUyjmn7s374UNH-F6YvDCWs0fIB7swzoa9mlgYaOZEeg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=1&prompt=none - 302 0 null 3499.5357ms
+2025-01-30 22:31:54 [INF] Request starting HTTP/2 GET https://localhost:7007/api/users/google-callback - null null
+2025-01-30 22:31:54 [INF] Error from RemoteAuthentication: The oauth state was missing or invalid..
+2025-01-30 22:31:54 [INF] Request finished HTTP/2 GET https://localhost:7007/api/users/google-callback - 302 0 null 11.3521ms
