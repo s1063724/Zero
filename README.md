@@ -19,7 +19,7 @@
 ![image](https://github.com/user-attachments/assets/9f334849-6e55-4477-a7b7-9a6cda9d3167)
 
 ### Gmail會告知登入成功
-![image]([https://github.com/user-attachments/assets/5603d378-721e-4638-aff1-5f5df67a336a])
+![image](https://github.com/s1063724/Zero/blob/main/%E7%99%BB%E5%85%A5.png)
 
 ## 註冊
 ![image](https://github.com/user-attachments/assets/fb0ea85a-93d0-4a49-9208-0fb4c80a8294)
