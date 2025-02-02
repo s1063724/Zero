@@ -24,7 +24,7 @@
 ## 註冊
 ![image](https://github.com/user-attachments/assets/fb0ea85a-93d0-4a49-9208-0fb4c80a8294)
 ### 後端(SQL Server會記錄帳號相關訊息)
-![image](https://github.com/user-attachments/assets/ee739880-8bb1-48cd-883a-a95c0282252d)
+![image](https://github.com/s1063724/Zero/blob/main/%E8%B3%87%E6%96%99%E5%BA%AB.png)
 
 
 ## 深色模式
