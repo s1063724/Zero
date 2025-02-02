@@ -16,7 +16,7 @@
 ![image](https://github.com/user-attachments/assets/97c9486c-44a2-4ad2-b3fc-ca1954988f5a)
 
 ## 登入
-![image](https://github.com/user-attachments/assets/a0460115-419d-4bdb-bce1-12225a37b3b4)
+![image](path/to/登入.png)
 ### Gmail會告知登入成功
 ![image](https://github.com/user-attachments/assets/5603d378-721e-4638-aff1-5f5df67a336a)
 
