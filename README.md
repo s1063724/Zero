@@ -16,9 +16,10 @@
 ![image](https://github.com/user-attachments/assets/97c9486c-44a2-4ad2-b3fc-ca1954988f5a)
 
 ## 登入
-![image](path/to/登入.png)
+![image](https://github.com/user-attachments/assets/9f334849-6e55-4477-a7b7-9a6cda9d3167)
+
 ### Gmail會告知登入成功
-![image](https://github.com/user-attachments/assets/5603d378-721e-4638-aff1-5f5df67a336a)
+![image]([https://github.com/user-attachments/assets/5603d378-721e-4638-aff1-5f5df67a336a])
 
 ## 註冊
 ![image](https://github.com/user-attachments/assets/fb0ea85a-93d0-4a49-9208-0fb4c80a8294)
