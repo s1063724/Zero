@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./backend:/app
+    
+  frontend:
+    command: npm run serve
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules 

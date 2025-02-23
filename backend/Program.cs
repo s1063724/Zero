@@ -39,25 +39,20 @@ builder.Services.AddTransient<IEmailService, EmailService>();
 // 配置 Kestrel 使用隨機端口
 builder.WebHost.UseUrls(); // 清除所有預設 URL
 
-// 配置 Kestrel
+// 修改 Kestrel 配置，只使用 HTTP
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    // 使用 IP 地址而不是 localhost
-    serverOptions.Listen(IPAddress.Parse("127.0.0.1"), 0, listenOptions =>
-    {
-        listenOptions.UseHttps();
-    });
+    serverOptions.ListenAnyIP(5000); // 確保監聽所有 IP
 });
 
-// 添加 CORS 服務
+// 添加 CORS 配置
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowVueApp", policy =>
+    options.AddPolicy("AllowAll", builder =>
     {
-        policy.WithOrigins("http://localhost:8080")
-              .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials();
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
     });
 });
 
@@ -105,44 +100,29 @@ builder.Services.AddAuthentication(options =>
 })
 .AddGoogle(options =>
 {
-    var clientId = builder.Configuration["Authentication:Google:ClientId"] ?? 
-        throw new InvalidOperationException("Google ClientId not configured");
-    var clientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? 
-        throw new InvalidOperationException("Google ClientSecret not configured");
-    
-    options.ClientId = clientId;
-    options.ClientSecret = clientSecret;
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
     options.CallbackPath = "/api/users/google-callback";
     
+    // 修改 Cookie 設置
     options.CorrelationCookie.SameSite = SameSiteMode.None;
     options.CorrelationCookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.CorrelationCookie.HttpOnly = true;
-    options.CorrelationCookie.IsEssential = true;
+    options.CorrelationCookie.Domain = ".zero.com";  // 添加域名
     
-    // Google 登入成功後觸發 Email 通知
+    // 修改授權端點
     options.Events = new OAuthEvents
     {
-        OnTicketReceived = async context =>
+        OnRedirectToAuthorizationEndpoint = context =>
         {
-            var emailService = context.HttpContext.RequestServices.GetRequiredService<IEmailService>();
-
-            var email = context.Principal?.FindFirstValue(ClaimTypes.Email);
-            if (!string.IsNullOrEmpty(email))
-            {
-                await emailService.SendEmailAsync(email, "登入成功通知", "您已成功登入商品網站！");
-            }
-
-            context.Properties.IsPersistent = true;
-        },
-        OnRemoteFailure = context =>
-        {
-            context.HandleResponse();
-            context.Response.Redirect($"{FrontendUrl}?error={Uri.EscapeDataString(context.Failure?.Message ?? "Unknown error")}");
+            var uriBuilder = new UriBuilder(context.RedirectUri);
+            uriBuilder.Host = "api.zero.com";
+            uriBuilder.Scheme = "https";
+            context.RedirectUri = uriBuilder.ToString();
+            
+            // 直接返回重定向 URL
             return Task.CompletedTask;
         }
     };
-
-    options.SaveTokens = true;
 });
 
 // 添加日誌記錄
@@ -174,12 +154,13 @@ if (app.Environment.IsDevelopment())
 }
 
 // 中間件順序
-app.UseHttpsRedirection();
+// 註釋或移除 HTTPS 相關配置
+// app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
 // CORS 中間件
-app.UseCors("AllowVueApp");
+app.UseCors("AllowAll");
 
 app.UseAuthentication();
 app.UseAuthorization();

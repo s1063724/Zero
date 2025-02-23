@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\ProductWebsite\\ProductWebsite.csproj": {}
+    "C:\\Users\\user\\Desktop\\ProductWebSite\\backend\\ProductWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\ProductWebsite\\ProductWebsite.csproj": {
+    "C:\\Users\\user\\Desktop\\ProductWebSite\\backend\\ProductWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\ProductWebsite\\ProductWebsite.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\ProductWebSite\\backend\\ProductWebsite.csproj",
         "projectName": "ProductWebsite",
-        "projectPath": "C:\\Users\\user\\ProductWebsite\\ProductWebsite.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\ProductWebSite\\backend\\ProductWebsite.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\ProductWebsite\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\ProductWebSite\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -65,17 +65,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[9.0.2, )"
             },
             "Serilog": {
               "target": "Package",
@@ -117,7 +117,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

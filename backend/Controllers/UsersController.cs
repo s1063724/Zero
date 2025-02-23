@@ -234,10 +234,10 @@ namespace UserManagementAPI.Controllers
         {
             var properties = new AuthenticationProperties
             {
-                RedirectUri = Url.Action(nameof(GoogleCallback)),
+                RedirectUri = "https://api.zero.com/api/users/google-callback",
                 Items =
                 {
-                    { "returnUrl", FrontendUrl }
+                    { "returnUrl", "https://zero.com" }
                 }
             };
 
@@ -253,35 +253,12 @@ namespace UserManagementAPI.Controllers
                 
                 if (!authenticateResult.Succeeded)
                 {
-                    return Redirect("http://localhost:8080/login?error=authentication_failed");
+                    return Redirect("https://zero.com/login?error=authentication_failed");
                 }
 
                 var claims = authenticateResult.Principal.Claims;
                 var email = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
                 var name = claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
-
-                if (!string.IsNullOrEmpty(email))
-                {
-                    // 發送歡迎郵件
-                    try
-                    {
-                        var mailMessage = new MailMessage
-                        {
-                            From = new MailAddress(_configuration["Smtp:Username"]),
-                            Subject = "歡迎登入",
-                            Body = $"親愛的 {name}，<br><br>感謝您使用 Google 帳號登入我們的系統。<br><br>祝您使用愉快！",
-                            IsBodyHtml = true
-                        };
-                        mailMessage.To.Add(email);
-
-                        await _smtpClient.SendMailAsync(mailMessage);
-                        _logger.LogInformation($"Welcome email sent to {email}");
-                    }
-                    catch (Exception ex)
-                    {
-                        _logger.LogError(ex, $"Failed to send welcome email to {email}");
-                    }
-                }
 
                 var userInfo = new
                 {
@@ -291,12 +268,12 @@ namespace UserManagementAPI.Controllers
                     Authenticated = true
                 };
 
-                return Redirect($"http://localhost:8080/login?userInfo={Uri.EscapeDataString(JsonSerializer.Serialize(userInfo))}");
+                return Redirect($"https://zero.com/login?userInfo={Uri.EscapeDataString(JsonSerializer.Serialize(userInfo))}");
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Google callback error");
-                return Redirect($"http://localhost:8080/login?error={Uri.EscapeDataString(ex.Message)}");
+                return Redirect($"https://zero.com/login?error={Uri.EscapeDataString(ex.Message)}");
             }
         }
 
