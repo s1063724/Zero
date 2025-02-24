@@ -29,3 +29,9 @@
 
 ## 深色模式
 ![image](https://github.com/user-attachments/assets/ebad57fd-85e5-4ddf-998f-7533694da924)
+
+## 配置說明
+
+1. 複製 appsettings.template.json 為 appsettings.json
+2. 填入您的 Google OAuth 憑證
+3. 其他配置...
