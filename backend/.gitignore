@@ -1,0 +1,10 @@
+# 設定檔
+appsettings.json
+appsettings.*.json
+bin/
+obj/
+logs/
+
+# IDE
+.vs/
+*.user 
